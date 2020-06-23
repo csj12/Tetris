@@ -10,6 +10,21 @@ namespace Tetris
     {
         static void Main(string[] args)
         {
+            TETRISSCREEN NewSC = new TETRISSCREEN(10, 15);
+
+            Block NewBlock = new Block(NewSC);
+
+            while (true)
+            {
+                for (int i = 0; i < 20000000; i++)
+                {
+                    int a = 0;
+                }
+                Console.Clear();
+                NewBlock.Move();
+                NewSC.Clear();
+                NewSC.Render();
+            }
         }
     }
 }
