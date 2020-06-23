@@ -18,7 +18,7 @@ namespace Tetris
             {
                 for (int i = 0; i < 20000000; i++)
                 {
-                    int a = 0;
+                    int a = 4;
                 }
                 Console.Clear();
                 NewSC.Render();
