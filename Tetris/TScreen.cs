@@ -61,10 +61,10 @@ namespace Tetris
 
         public TETRISSCREEN(int _X, int _Y)
         {
-            for (int y = 0; y < _Y; y++)
+            for (int y = 0; y < _Y; ++y)
             {
                 BlockList.Add(new List<TBLOCK>());
-                for (int x = 0; x < _X; x++)
+                for (int x = 0; x < _X; ++x)
                 {
                     BlockList[y].Add(TBLOCK.VOID);
                 }
@@ -72,7 +72,7 @@ namespace Tetris
                 {
                     BlockList[0][i] = TBLOCK.WALL;
                 }
-                for (int i = 0; i < BlockList[BlockList.Count - 1].Count; ++i)
+                for (int i = 0; i < BlockList[BlockList.Count - 1].Count; i++)
                 {
                     BlockList[BlockList.Count - 1][i] = TBLOCK.BLOCK;
                 }

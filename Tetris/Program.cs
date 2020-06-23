@@ -21,9 +21,9 @@ namespace Tetris
                     int a = 0;
                 }
                 Console.Clear();
-                NewBlock.Move();
-                NewSC.Clear();
                 NewSC.Render();
+                NewSC.Clear();
+                NewBlock.Move();
             }
         }
     }
